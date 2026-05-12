@@ -1,5 +1,8 @@
 # 🛡️ EBIOS RM Pro v5
 
+Reprise de l'application Web de EBIOS RM Pro v5.
+
+
 **Application web d'analyse de risques selon la méthodologie EBIOS Risk Manager de l'ANSSI**
 
 ![Version](https://img.shields.io/badge/version-5.0-blue)
@@ -72,12 +75,20 @@ Voir [SECURITY.md](SECURITY.md) pour plus de détails.
 
 ```
 ebios-rm-pro/
-├── EBIOS-RM-Pro-v5.html       # Application principale
-├── README.md                   # Documentation
-├── SECURITY.md                 # Politique de sécurité
-├── LICENSE                     # MIT License
-└── examples/
-    └── exemple_pme_industrielle.json  # Exemple de données
+/
+├─ index.html
+├─ assets/
+│  ├─ css/
+│  │  └─ common.css
+│  └─ js/
+│     └─ shared.js
+└─ pages/
+   ├─ atelier1.html
+   ├─ atelier2.html
+   ├─ atelier3.html
+   ├─ atelier4.html
+   ├─ atelier5.html
+   └─ dashboard.html
 ```
 
 ## 📄 License
