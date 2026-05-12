@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>EBIOS RM Pro v5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  https://cdn.tailwindcss.com>
+
+  assets/css/common.css
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex min-h-screen">
+
+  <!-- SIDEBAR -->
+  <aside class="w-64 bg-slate-900 border-r border-slate-700 flex flex-col">
+    <div class="p-4 border-b border-slate-700 font-bold text-white">
+      🛡️ EBIOS RM Pro v5
+    </div>
+
+    <nav class="flex-1 p-2 space-y-1 text-sm">
+      <button onclick="loadPage('atelier1','Atelier 1','Cadrage')" class="nav-btn">1 – Cadrage</button>
+      <button onclick="loadPage('atelier2','Atelier 2','Sources de risque')" class="nav-btn">2 – Sources</button>
+      <button onclick="loadPage('atelier3','Atelier 3','Stratégiques')" class="nav-btn">3 – Stratégiques</button>
+      <button onclick="loadPage('atelier4','Atelier 4','Opérationnels')" class="nav-btn">4 – Opérationnels</button>
+      <button onclick="loadPage('atelier5','Atelier 5','Traitement')" class="nav-btn">5 – Traitement</button>
+      <button onclick="loadPage('dashboard','Dashboard','Synthèse')" class="nav-btn">📊 Dashboard</button>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="flex-1 flex flex-col">
+    <header class="border-b border-slate-700 p-4">
+      <h2 id="pageTitle" class="text-lg font-bold text-white">Atelier 1</h2>
+      <p id="pageDesc" class="text-slate-400 text-xs">Cadrage</p>
+    </header>
+
+    pages/atelier1.html</iframe>
+  </main>
+
+  <script>
+    function loadPage(page, title, desc) {
+      document.getElementById("contentFrame").src = `pages/${page}.html`;
+      document.getElementById("pageTitle").textContent = title;
+      document.getElementById("pageDesc").textContent = desc;
+    }
+  </script>
+
+</body>
+</html>
